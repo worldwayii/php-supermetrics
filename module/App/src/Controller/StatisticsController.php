@@ -61,6 +61,7 @@ class StatisticsController extends Controller
      */
     public function indexAction(array $params)
     {
+        var_dump($params);
         try {
             $date   = $this->extractDate($params);
             $params = ParamsBuilder::reportStatsParams($date);
